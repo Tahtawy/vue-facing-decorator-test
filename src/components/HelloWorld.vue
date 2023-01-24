@@ -21,7 +21,7 @@ export default class HelloWorld extends Vue {
   msgWithExclamination = "";
 
   @Watch("msgWithExclamination")
-  msgWithExclaminationWatcher(newValue: string, oldValue: string) {
+  msgWithExclaminationWatcher(newValue: string) {
     if (newValue) {
       this.isActive = true;
     } else {
